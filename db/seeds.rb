@@ -2,6 +2,11 @@
 # The data can then be loaded with the bin/rails db:seed command (or created alongside the database with db:setup).
 #
 
+Review.destroy_all
+Airline.destroy_all
+
+
+
 airlines = Airline.create([
   { 
     name: "United Airlines",
@@ -28,6 +33,7 @@ airlines = Airline.create([
     image_url: "https://open-flights.s3.amazonaws.com/American-Airlines.png" 
   }
 ])
+
 
 reviews = Review.create([
   {
